@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="file/boott.css">
+  <title>سایدبار با همبرگر</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark fixed-top">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleNav()">
+    <span class="navbar-toggler-icon"></span>
+    <!-- متن دلخواه برای دکمه همبرگر -->
+    <span class="navbar-toggler-text"></span>
+  </button>
+  <!-- متن دلخواه برای ناوبری -->
+  <a class="navbar-brand" href="#">درجه آموزش</a>
+</nav>
+
+<div class="sidebar" id="navbarToggle">
+  <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a> -->
+  <a href="#">لینک 1</a>
+  <a href="#">لینک 2</a>
+  <a href="#">لینک 3</a>
+</div>
+<div class="content-asl">
+  <div class="container">
+    <div class="row">
+      <div class="row justify-content-md-center ">
+        <div class="row">
+          <div class="col-lg-12">col</div>
+          <div class="col-lg-12">col</div>
+          <div class="w-100">cod</div>
+          <div class="col-lg-12">col</div>
+          <div class="col-lg-12">col</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="file/jquery.js"></script>
+<script src="file/jsdelliver.js"></script>
+<script src="file/boot.js"></script>
+
+<script>
+  function toggleNav() {
+    $(".sidebar").width() === 0 ? openNav() : closeNav();
+  }
+
+  function openNav() {
+    $(".sidebar").css("width", "300px");
+  }
+
+  // function closeNav() {
+  //   $(".sidebar").css("width", "0");
+  // }
+</script>
+</body>
+</html>
